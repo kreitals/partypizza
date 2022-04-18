@@ -26,13 +26,12 @@ const Order = () => {
   }, []);
 
 function LoadLastOrder(){
-  if (user !== undefined && user.pizza42 !== undefined ){
+  if (user !== undefined && user['http://pizza42.com/'] !== undefined ){
     console.log("oh no")
     setState({
           ...state,
           lastOrder: user['http://pizza42.com/']?.pizza42.orders.pop().pizzaOrder
         });
-        console.log("parrot", state.lastOrder)
   }
 }
 
@@ -179,7 +178,8 @@ function LoadLastOrder(){
           </Row>
         </div>
 
-        {user !== undefined && user.pizza42 !== undefined &&  (
+        {console.log("user",user)}
+        { user !== undefined && user['http://pizza42.com/'] !== undefined &&  (
                 <div className="next-steps my-5">
                 <h4 className="my-5 text-center">Welcome back! As a loyal Pizzahead get your last pizza again for only $20</h4>
                 <Row className="d-flex justify-content-md-center">
