@@ -1,0 +1,101 @@
+.next-steps .fa-link {
+  margin-right: 5px;
+}
+
+/* Fix for use only flexbox in content area */
+.next-steps .row {
+  margin-bottom: 0;
+}
+
+.next-steps .col-md-5 {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .next-steps .col-md-5 {
+    margin-bottom: 0;
+  }
+}
+
+.spinner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.result-block-container .result-block {
+  opacity: 1;
+}
+
+.hero h1 {
+  color: white;
+    font-size: 5rem;
+}
+
+.hero p.lead {
+  margin-bottom: 5rem !important;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.logo {
+  background-image: url("./assets/pizzafriends.svg") !important;
+  width: 3.6rem !important;
+  height: 3.5rem !important;
+}
+
+.navbar {
+  background: #f9d79f !important;
+}
+
+.navbar-light.bg-light .nav-link {
+  color: black;
+}
+
+.navbar .router-link-exact-active {
+  border-bottom: 3px solid white;
+}
+
+.btn-primary {
+  background-color: #f99e1f;
+  border-color: #f99e1f;
+  border-radius: 0.5em;
+  padding: 0.25rem 1rem;
+}
+
+.btn-primary:hover {
+  background-color: red  !important;
+  border-color: white;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: red !important;
+  border-color: white;
+  color: white;
+}
+
+
+.pizzaImage {
+    width: 9rem;
+    float: left;
+    padding-right: 2rem;
+}
+
+body {
+  background-color: #f9ac0c;
+}
+
+.mb-5 {
+  background-color: white;
+  padding: 1rem 5rem ;
+  border-radius: 2rem;
+}
